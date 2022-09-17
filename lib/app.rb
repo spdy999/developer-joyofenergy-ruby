@@ -15,6 +15,6 @@ class JOIEnergy < Sinatra::Base
   price_plan_service = PricePlanService.new(price_plans, electricity_reading_service)
   account_service = AccountService.new smart_meter_to_price_plan_accounts
 
-  use MeterReadingController, electricity_reading_service
+  use MeterReadingController, electricity_reading_service, account_service
   use PricePlanComparatorController, price_plan_service, account_service
 end
