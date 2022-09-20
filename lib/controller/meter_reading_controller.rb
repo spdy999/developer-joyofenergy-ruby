@@ -27,6 +27,8 @@ class MeterReadingController < Sinatra::Base
     price_plan = @account_service.price_plan_for_meter(meter_id)
     if price_plan.nil?
       status 404
+    else
+      # TODO: status 200
     end
   end
 
