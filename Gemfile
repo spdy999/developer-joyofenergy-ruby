@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-gem 'puma', '4.3.6'
+gem 'puma', '5.6.7'
 gem 'sinatra'
 
 group :development do
